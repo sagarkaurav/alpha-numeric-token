@@ -1,28 +1,22 @@
 # AlphaNumericToken
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/AlphaNumericToken`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
+If you need to generate an alphanumeric string for example 'ABC000012'
+you can use AlphaNumericToken gem for it.
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'AlphaNumericToken'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install AlphaNumericToken
+Run below command into your terminal.
+gem install AlphaNumericToken
 
 ## Usage
-
-TODO: Write usage instructions here
+1.) Require the AlphaNumericToken gem
+require 'AlphaNumericToken'
+2.)output_string = AlphaNumericToken::ANS.generate('ABC',10,123)
+the method inside ANS class takes three arguments first argument is string.
+second argument is the length of number string you want to include in the string
+for example if want string 'ABC000'
+then the 3 is the length of number string.
+the last argument is the number you want to include in the string
+example if want string 'ABC000123'
+then use AlphaNumericToken::ANS.generate('ABC',6,123)
 
 ## Development
 
@@ -38,4 +32,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
