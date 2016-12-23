@@ -5,7 +5,7 @@ class AlphaNumericTokenTest < Minitest::Test
     refute_nil ::AlphaNumericToken::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_return_correct_value
+    assert_equal 'ABC0123',AlphaNumericToken::ANS.generate('ABC',4,123)
   end
 end
